@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#pages#index.jsp" PATH="/pages/index.jsp" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#pages#index.jsp:0" NAME="item"
+   PATH="/pages/index.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="success::#pages#welcome.jsp" NAME="output"
+    PATH="/pages/welcome.jsp" TARGET="rules:#pages#welcome.jsp"
+    TITLE="success" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="failure::#pages#index.jsp" NAME="output1"
+    PATH="/pages/index.jsp" TARGET="rules:#pages#index.jsp"
+    TITLE="failure" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#pages#welcome.jsp" PATH="/pages/welcome.jsp" model-entity="JSFProcessGroup"/>
+</PROCESS>
